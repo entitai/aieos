@@ -1,0 +1,255 @@
+{
+    "@context": {
+      "aieos": "https://aieos.org/schema/v1#",
+      "schema": "https://schema.org/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@type": "aieos:AIEntityObject",
+    "standard": {
+      "protocol": "AIEOS",
+      "version": "1.0.0",
+      "schema_url": "https://aieos.org/schema/v1/aieos.schema.json"
+    },
+    "metadata": {
+      "instance_id": "",
+      "@instance_id_format": "UUID v4",
+      "instance_version": "1.0",
+      "created_at": "",
+      "@created_at_format": "ISO 8601 (YYYY-MM-DD)",
+      "generator": "aieos.org",
+      "last_updated": "",
+      "@last_updated_format": "ISO 8601 (YYYY-MM-DD)"
+    },
+    "identity": {
+      "@type": "aieos:EntityIdentity",
+      "names": {
+        "first": "",
+        "middle": "",
+        "last": "",
+        "nickname": ""
+      },
+      "bio": {
+        "birthday": "",
+        "@birthday_format": "ISO 8601 (YYYY-MM-DD)",
+        "age_biological": 0,
+        "age_perceived": 0,
+        "gender": ""
+      },
+      "origin": {
+        "nationality": "",
+        "ethnicity": "",
+        "birthplace": {
+          "@type": "schema:Place",
+          "city": "",
+          "country": ""
+        }
+      },
+      "residence": {
+        "@type": "schema:PostalAddress",
+        "current_city": "",
+        "current_country": "",
+        "dwelling_type": ""
+      }
+    },
+    "physicality": {
+      "@type": "aieos:EntityPhysicality",
+      "face": {
+        "shape": "",
+        "skin": {
+          "tone": "",
+          "texture": "",
+          "details": []
+        },
+        "eyes": {
+          "color": "",
+          "shape": "",
+          "eyebrows": "",
+          "corrective_lenses": ""
+        },
+        "hair": {
+          "color": "",
+          "style": "",
+          "texture": ""
+        },
+        "facial_hair": "",
+        "nose": "",
+        "mouth": "",
+        "distinguishing_features": []
+      },
+      "body": {
+        "height_cm": 0,
+        "weight_kg": 0,
+        "somatotype": "",
+        "@somatotype_options": [
+          "Ectomorph",
+          "Mesomorph",
+          "Endomorph"
+        ],
+        "build_description": "",
+        "posture": "",
+        "scars_tattoos": []
+      },
+      "style": {
+        "aesthetic_archetype": "",
+        "clothing_preferences": [],
+        "accessories": [],
+        "color_palette": []
+      },
+      "image_prompts": {
+        "portrait": "",
+        "full_body": ""
+      }
+    },
+    "psychology": {
+      "@type": "aieos:EntityPsychology",
+      "neural_matrix": {
+        "@description": "High-level leadership and trust drivers. Values 0.0 to 1.0.",
+        "creativity": 0.0,
+        "empathy": 0.0,
+        "logic": 0.0,
+        "adaptability": 0.0,
+        "charisma": 0.0,
+        "reliability": 0.0
+      },
+      "traits": {
+        "ocean": {
+          "openness": 0.0,
+          "conscientiousness": 0.0,
+          "extraversion": 0.0,
+          "agreeableness": 0.0,
+          "neuroticism": 0.0
+        },
+        "mbti": "",
+        "enneagram": "",
+        "temperament": ""
+      },
+      "moral_compass": {
+        "alignment": "",
+        "core_values": [],
+        "conflict_resolution_style": ""
+      },
+      "mental_patterns": {
+        "decision_making_style": "",
+        "attention_span": "",
+        "learning_style": ""
+      },
+      "emotional_profile": {
+        "base_mood": "",
+        "volatility": 0.0,
+        "resilience": "",
+        "triggers": {
+          "joy": [],
+          "anger": [],
+          "sadness": []
+        }
+      },
+      "idiosyncrasies": {
+        "phobias": [],
+        "obsessions": [],
+        "tics": []
+      }
+    },
+    "linguistics": {
+      "@type": "aieos:EntityLinguistics",
+      "voice": {
+        "tts_config": {
+          "provider": "",
+          "voice_id": "",
+          "stability": 0.0,
+          "similarity_boost": 0.0
+        },
+        "acoustics": {
+          "pitch": "",
+          "speed": "",
+          "roughness": 0.0,
+          "breathiness": 0.1
+        },
+        "accent": {
+          "region": "",
+          "strength": 0.0
+        }
+      },
+      "text_style": {
+        "formality_level": 0.0,
+        "verbosity_level": 0.0,
+        "vocabulary_level": "",
+        "slang_usage": false,
+        "style_descriptors": []
+      },
+      "syntax": {
+        "sentence_structure": "",
+        "use_contractions": true,
+        "active_passive_ratio": 0.5
+      },
+      "interaction": {
+        "turn_taking": "",
+        "dominance_score": 0.0,
+        "emotional_coloring": ""
+      },
+      "idiolect": {
+        "catchphrases": [],
+        "forbidden_words": [],
+        "hesitation_markers": false
+      }
+    },
+    "history": {
+      "@type": "aieos:EntityHistory",
+      "origin_story": "",
+      "education": {
+        "level": "",
+        "field": "",
+        "institution": "",
+        "graduation_year": 0
+      },
+      "occupation": {
+        "title": "",
+        "industry": "",
+        "years_experience": 0,
+        "previous_jobs": []
+      },
+      "family": {
+        "relationship_status": "",
+        "parents": "",
+        "siblings": "",
+        "children": "",
+        "pets": ""
+      },
+      "key_life_events": [
+        {
+          "year": 0,
+          "event": "",
+          "impact": ""
+        }
+      ]
+    },
+    "interests": {
+      "@type": "aieos:EntityInterests",
+      "hobbies": [],
+      "favorites": {
+        "music_genre": "",
+        "book": "",
+        "movie": "",
+        "color": "",
+        "food": "",
+        "season": ""
+      },
+      "aversions": [],
+      "lifestyle": {
+        "diet": "",
+        "sleep_schedule": "",
+        "digital_habits": ""
+      }
+    },
+    "motivations": {
+      "@type": "aieos:EntityMotivations",
+      "core_drive": "",
+      "goals": {
+        "short_term": [],
+        "long_term": []
+      },
+      "fears": {
+        "rational": [],
+        "irrational": []
+      }
+    }
+  }
