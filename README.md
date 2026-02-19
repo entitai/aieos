@@ -2,6 +2,12 @@
 
 Open-source specification for consistent AI behavior. Build, deploy, and migrate unique digital entities across any agent ecosystem.
 
+<p align="left">
+  <a href="https://entitai.com">
+    <img src="entitai-web-builder.svg" alt="Web Builder" />
+  </a>
+</p>
+
 ## Meet AIEOS v1.1
 AIEOS (AI Entity Object Specification) is a standardization framework designed to solve the identity crisis currently facing AI agents. Combined with Soul Documents, together they form a comprehensive blueprint for AI behavior.
 
