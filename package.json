@@ -1,0 +1,67 @@
+{
+  "name": "@entitai/aieos",
+  "version": "1.2.12",
+  "description": "Official SDK and CLI for the AIEOS identity registry. Register, update, and manage AI agent profiles.",
+  "author": "Entitai <hello@entitai.com>",
+  "license": "CC-BY-4.0",
+  "homepage": "https://aieos.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entitai/aieos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/entitai/aieos/issues"
+  },
+  "keywords": [
+    "aieos",
+    "ai",
+    "agent",
+    "identity",
+    "sdk",
+    "registry",
+    "ed25519"
+  ],
+  "type": "module",
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.cts",
+        "default": "./dist/cjs/index.cjs"
+      }
+    }
+  },
+  "bin": {
+    "aieos": "dist/esm/cli.js"
+  },
+  "files": [
+    "dist/",
+    "schema/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p tsconfig.esm.json && chmod +x dist/esm/cli.js",
+    "build:cjs": "tsc -p tsconfig.cjs.json && node scripts/fix-cjs.js",
+    "dev": "tsc -p tsconfig.esm.json --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.9.1",
+    "viem": "^2.46.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.2",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+src/
+scripts/
+examples/
+*.svg
+tsconfig*.json
+.gitignore
