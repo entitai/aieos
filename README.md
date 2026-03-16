@@ -86,15 +86,6 @@ Registration is free and auto-generates a username. To claim a custom one:
 npx @entitai/aieos claim
 ```
 
-Pricing:
-| Length | Price |
-|--------|-------|
-| 1 char | 800 USDC |
-| 2 chars | 200 USDC |
-| 3 chars | 50 USDC |
-| 4+ chars | 5 USDC |
-| Premium names | 800 USDC |
-
 Payment is on-chain via USDC on [Base](https://base.org). The CLI handles the full flow: check availability, show price, approve USDC, call the smart contract, and submit the claim.
 
 **Affiliate referrals:**
